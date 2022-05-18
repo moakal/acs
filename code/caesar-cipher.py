@@ -8,8 +8,8 @@ def encrypt(key):
         array[i] = chr(ord(array[i]) + key)
     print("".join(array))
 
+
 def decrypt(key):
-    message = input("What message do you wish to decrypt?\n")
     array = list(message)
     for i in range(len(array)):
         array[i] = chr(ord(array[i]) - key)
@@ -17,5 +17,6 @@ def decrypt(key):
 
 encrypt(3)
 
+message = input("What message do you wish to decrypt?\n")
 for i in range(26):
     decrypt(i)
