@@ -1,6 +1,8 @@
 # vernam cipher
 # 22/05/2022
 
+# broken due to python binary handling
+
 import random
 import string
 
