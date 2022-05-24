@@ -44,8 +44,7 @@ def decrypt():
     for k in range(len(splitMessage)):
       message.append(chr(int(''.join(splitMessage[k]))))
     message = ''.join(message)
-    return 'Keypad:', key
-    return 'Message:', message
+    print('Keypad: ' + key + 'Message: ' + message)
 
 encrypt()
 print('--------')
